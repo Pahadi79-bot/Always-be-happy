@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8>
+<meta name"viewport" content="width=device-width, initial-scale=1.0">
+<title>Always be Happy 😊, Never be feel alone I'm always with you ❤</title>
+
+<style>
+body  {
+margin: 0;
+padding: 0;
+text-align: center;
+font-family: 'Arial, sans-serif;
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+overflow: hidden;
+}
+
+.container {
+padding: 20px;
+margin-top: 20px;
+}
+
+h1 {
+color: white;
+font-size: 26px;
+}
+
+p {
+color: white;
+font-size: 16px;
+line-height: 1.6;
+}
+
+iframe {
+margin-top: 10px;
+border-radius: 15px;
+}
+
+button {
+margin: 10px;
+padding: 12px 20px;
+font-size: 16px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
+}
+
+#yes {
+background-color: #28a745;
+color: white;
+}
+
+#no {
+background-color: #dc3545;
+color: white;
+position: absolute;
+}
+
+.heart {
+position: fixed;
+color: red;
+animation: float 5s linear infinite;
+}
+
+@keyframes float {
+0% { transform: translateY(100vh);}
+100% {transform: translateY(-10vh);}
+}
+<style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>I always want to see you happy 😊❤</h1>
+
+<p>
+Aarushi, I don't know what is going on with you...
+But trust me, No matter what happen I promise I'll always with you ❤️‍🩹
+Always be happy ❤
+</p>
+
+<!-- 🎵 Humdard Song -->
+<iframe width="300" height="170"
+src="https://www.youtube.com/embed/0Y9z1e0j0p4?autoplay=1&loop=1&playlist=0Y9z1e0j0p4">
+</iframe>
+
+<br>
+
+<button id="yes" onclick="ready to be happy and to trust me()">Ready to be happy 😊 and to trust me❤</button>
+<button id="no" onmouseover="NoButton()">You sadness also hurt me 💔😔</button>
+
+</div>
+
+<script>
+function forgive() {
+alert("Thanks Aarushi for your cute smile 😊 I promise I'll never leave you alone, I'll always with you...! ❤");
+}
+
+function moveButton() {
+let x = Math.random() * (window.innerWidth - 100);
+let y = Math.random() * (window.innerHeight - 50);
+let btn = document.getElementById("no"); 
+btn.style.left = x + "px";
+btn.style.top = y + "px";
+}
+
+//Floating hearts
+setInterval(() => {
+const heart = document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML = "❤";
+heart.style.left = Math.random() * 100 + "vw";
+heart.style.fontSize = Math.random() * 20 + 10 + "px";
+document.body.appendChild(heart);
+ 
+setTimeout(() => heart.remove(), 5000);
+}, 300);
+</script>
+
+</body>
+</html>
